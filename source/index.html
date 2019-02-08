@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Alexander Chebaev">
   <title>Каталог квартир</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -56,10 +56,48 @@
         <header class="apartments-catalog__header">
           <p class="sorting"></p>
         </header>
-        <div class="apartments-catalog__result apartments-cards">
-          <div class="apartments-cards__card card">
+        <div class="apartments-catalog__result catalog-items">
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <li class="flag-list__item">-17%</li>
+                <li class="flag-list__item">Шок цена!</li>
+              </ul>
+              <button class="button--add-to-favorite">
+                <svg></svg>
+              </button>
+            </div>
+            <div class="catalog-item__body">
+              <img class="catalog-item__image" src="" alt="">
+              <h4 class="catalog-item__title">Студия №44</h4>
+              <table class="catalog-item__data-table data-table">
+                <tr>
+                  <td class="data-table__finish">без отделки</td>
+                  <td class="data-table__space">
+                    <dl class="data-table__parameter parameter">
+                      <dt class="parameter__value">28 м<sup>2</sup></dt>
+                      <dd class="parameter__description">площадь</dd>
+                    </dl>
+                  </td>
+                  <td>
+                    <dl class="data-table__parameter parameter">
+                      <dt class="parameter__value">12/14</dt>
+                      <dd class="parameter__description">этаж</dd>
+                    </dl>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <footer class="catalog-item__footer">
+              <span class="catalog-item__status">Забронировано</span>
+            </footer>
+          </div>
+          <div class="catalog-item catalog-item--vacant">
   
-          </div>  
+          </div>
+          <div class="catalog-item catalog-item--sold">
+  
+          </div> 
         </div>
         <footer class="apartments-catalog__footer">
           <button class="button button--show-more">Показать еще 20</button>

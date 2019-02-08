@@ -3,7 +3,6 @@
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
-  'abstracts/functions',
   'abstracts/mixins';
 
 // 2. Vendors
@@ -12,7 +11,6 @@
 @import
   'base/base',
   'base/fonts',
-  'base/typography',
   'base/helpers';
 
 // 4. Layout-related sections

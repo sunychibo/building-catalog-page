@@ -87,13 +87,13 @@ gulp.task("serve", function(){
         server: "build/"
     });
 
-    gulp.watch("source/sass/**/*.{scss, sass}", ["style"]);
+    gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
     gulp.watch("source/js/**/*.js", ["script"]).on('change', server.reload);
     gulp.watch("source/*.html", ["html"]).on('change', server.reload);
 });
 
 gulp.task("copy", function(){
-    return gulp.src("source/fonts/**/*.{woff, woff2}", { base: "source" })
+    return gulp.src("source/fonts/**/*.{woff,woff2}", { base: "source" })
         .pipe(gulp.dest("build"));
 });
 
