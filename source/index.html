@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Alexander Chebaev">
+  <title>Каталог квартир</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container container--header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype.svg" width="226" height="30" alt="Строительная компания">
+      </a>
+      <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Объекты</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Компания</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Как купить</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Агентам</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Регионам</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+      </nav>
+      <dl class="page-header__contacts phone">
+        <dt class="phone__number">8 888 888 88 98</dt>
+        <dd class="phone__call-to-action">Звони скорее!</dd>
+      </dl>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="container container--main">
+      <h1 class="visually-hidden">Строительный каталог</h1>
+      <h2 class="search-results">Найдено 666 квартир</h2>
+      <section class="apartments-catalog">
+        <h3 class="visually-hidden">Каталог квартир</h3>
+        <header class="apartments-catalog__header">
+          <p class="sorting"></p>
+        </header>
+        <div class="apartments-catalog__result apartments-cards">
+          <div class="apartments-cards__card card">
+  
+          </div>  
+        </div>
+        <footer class="apartments-catalog__footer">
+          <button class="button button--show-more">Показать еще 20</button>
+        </footer>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container container--main container--custom-offset">
+      <dl class="page-footer__call-to-action action">
+        <dt class="action__title">Успей купить!</dt>
+        <dd class="phone__description">Подпишись и успей словить все акции</dd>
+      </dl>
+      <form class="footer-subscription subscription" action="">
+        <input type="email" name="subscription-email" id="subscription-email">
+        <button class="button button--subscription">Показать еще 20</button>
+        <input type="checkbox" name="subscription-news" id="subscription-news">
+        <label for="subscription-news">Подписаться на новости</label>
+      </form>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
