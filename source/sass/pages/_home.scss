@@ -1,3 +1,72 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.page-main {
+	background-color: $bg-color;
+}
+
+.container--main {
+	max-width: 1310px;
+	padding-top: 58px;
+	padding-bottom: 74px;
+}
+
+.search-results-title {
+	margin: 0;
+	padding-left: 134px;
+	margin-bottom: 62px;
+	font-size: 48px;
+	color: $brand-color;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.catalog {
+	background-color: $milk-white;
+	padding: 24px 107px;
+}
+
+.sorting-list {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: $deep-teal;
+}
+
+.sorting-list__title {
+	margin-right: 6px;
+}
+
+.sorting-item {
+	display: inline-block;
+	position: relative;
+
+	&--active {
+		span {
+			color: $brand-color;
+			border-bottom: 1.5px dotted rgba(0, 47, 47, 0.2);
+		}
+	}
+}
+
+.sorting-item +
+.sorting-item {
+	margin-left: 38px;
+}
+
+.sorting-item__title {
+	display: inline-block;
+}
+
+.sorting-item__button {
+	position: absolute;
+	@include button-reset;
+	@include no-outline;
+	width: 18px;
+	height: 18px;
+	background-color: $venice-light;
+	border-radius: 50%;
+	top: 2px;
+	right: -26px;
+}

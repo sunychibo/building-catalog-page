@@ -8,3 +8,26 @@
 
   list-style: none;
 }
+
+@mixin d-list-reset() {
+  margin: 0;
+  padding: 0;
+  dd {
+    margin: 0;
+  }
+}
+
+@mixin button-reset() {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+      display: none;
+  }
+}

@@ -1,3 +1,65 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.container--header {
+    max-width: 1684px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: $brand-color;
+    color: $milk-white;
+}
+
+.main-nav {
+    margin-left: -108px;
+}
+
+.site-list {
+    @include list-reset;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.site-list__item+.site-list__item {
+    margin-left: 50px;
+}
+
+.site-list__link {
+    @include no-outline;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+    transition: color 0.2s ease-in-out;
+}
+
+.site-list__link:link,
+.site-list__link:visited {
+    color: $milk-white;
+    text-decoration: none;
+}
+
+.site-list__link:focus,
+.site-list__link:hover {
+    color: $hillary;
+}
+
+.page-header__contacts {
+    @include d-list-reset;
+    padding-top: 12px;
+}
+
+.phone__number {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.phone__call-to-action {
+    font-size: 20px;
+    line-height: 1.2;
+}
