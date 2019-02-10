@@ -17,29 +17,29 @@
         <img class="page-header__logo-image" src="img/logotype.svg" width="34" height="85" alt="Строительная компания">
       </a>
       <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Объекты</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Компания</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Как купить</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Агентам</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Регионам</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Акции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Контакты</a>
-            </li>
-          </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Объекты</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Компания</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Как купить</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Агентам</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Регионам</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Акции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
       </nav>
       <dl class="page-header__contacts phone">
         <dt class="phone__number">8 888 88 88 98</dt>
@@ -61,7 +61,7 @@
               <button class="sorting-item__button" id="sorting-by-price"></button>
             </label>
             <label class="sorting-list__item sorting-item" for="sorting-by-rooms">
-                <span class="sorting-item__title">Комнатам</span>
+              <span class="sorting-item__title">Комнатам</span>
               <button class="sorting-item__button" id="sorting-by-rooms"></button>
             </label>
           </p>
@@ -73,60 +73,526 @@
                 <li class="flag-list__item">-17%</li>
                 <li class="flag-list__item">Шок цена!</li>
               </ul>
-              <button class="button--add-to-favorite">
-                <svg></svg>
-              </button>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-1">
+                <label class="add-to-favorite__label" for="add-to-favorite-1"></label>
+              </p>
             </div>
-            <div class="catalog-item__body">
-              <img class="catalog-item__image" src="" alt="">
-              <h4 class="catalog-item__title">Студия №44</h4>
-              <table class="catalog-item__data-table data-table">
-                <tr>
-                  <td class="data-table__finish">без отделки</td>
-                  <td class="data-table__space">
-                    <dl class="data-table__parameter parameter">
-                      <dt class="parameter__value">28 м<sup>2</sup></dt>
-                      <dd class="parameter__description">площадь</dd>
-                    </dl>
-                  </td>
-                  <td>
-                    <dl class="data-table__parameter parameter">
-                      <dt class="parameter__value">12/14</dt>
-                      <dd class="parameter__description">этаж</dd>
-                    </dl>
-                  </td>
-                </tr>
-              </table>
+            <div class="catalog-item__image">
+              <img src="img/plan-1.png" alt="План помещения">
             </div>
-            <footer class="catalog-item__footer">
-              <span class="catalog-item__status">Забронировано</span>
-            </footer>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Студия №44</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">без<br />отделки</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">28 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">12/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">1 900 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
           </div>
           <div class="catalog-item catalog-item--vacant">
-  
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <!-- <li class="flag-list__item">-17%</li>
+                <li class="flag-list__item">Шок цена!</li> -->
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-2">
+                <label class="add-to-favorite__label" for="add-to-favorite-2"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-2.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Однокомнатная №666</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">базовая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">66 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">6/6</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">1 666 666 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Свободно</span>
+              </footer>
+            </div>
           </div>
           <div class="catalog-item catalog-item--sold">
-  
-          </div> 
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <!-- <li class="flag-list__item">-17%</li>
+                <li class="flag-list__item">Шок цена!</li> -->
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-3">
+                <label class="add-to-favorite__label" for="add-to-favorite-3"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-3.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Двухкомнатная №567</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">65.6 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">7/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">5 900 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Продано</span>
+              </footer>
+            </div>
+          </div>
+
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list"></ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-1">
+                <label class="add-to-favorite__label" for="add-to-favorite-1"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-4.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Трехкомнатная №45</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">без<br />отделки</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">56 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">1/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">12 900 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <li class="flag-list__item">-17%</li>
+                <li class="flag-list__item">Шок цена!</li>
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-2">
+                <label class="add-to-favorite__label" for="add-to-favorite-2"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-5.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Студия №25</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">18 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">12/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">1 900 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <li class="flag-list__item">-6%</li>
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-3">
+                <label class="add-to-favorite__label" for="add-to-favorite-3"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-6.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Четырехкомнатная №259</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">98 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">14/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">23 900 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
+
+          <div class="catalog-item catalog-item--vacant">
+            <div class="catalog-item__header">
+              <ul class="flag-list"></ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-1">
+                <label class="add-to-favorite__label" for="add-to-favorite-1"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-7.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Однокомнатная №56</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">без<br />отделки</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">36 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">3/6</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">5 666 666 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Свободно</span>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog-item catalog-item--vacant">
+            <div class="catalog-item__header">
+              <ul class="flag-list"></ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-2">
+                <label class="add-to-favorite__label" for="add-to-favorite-2"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-8.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Трехкомнатная №46</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">86 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">1/6</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">5 696 664 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Свободно</span>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <li class="flag-list__item">-9%</li>
+                <li class="flag-list__item">Шок цена!</li>
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-3">
+                <label class="add-to-favorite__label" for="add-to-favorite-3"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-9.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Однокомнатная №2</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">18 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">3/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">1 200 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
+
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <li class="flag-list__item">-6%</li>
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-1">
+                <label class="add-to-favorite__label" for="add-to-favorite-1"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-10.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Студия №12</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">38 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">6/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">1 500 500 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list"></ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-2">
+                <label class="add-to-favorite__label" for="add-to-favorite-2"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-11.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Однокомнатная №8</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">черновая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">48 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">3/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">6 200 000 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog-item catalog-item--reserved">
+            <div class="catalog-item__header">
+              <ul class="flag-list">
+                <li class="flag-list__item">-6%</li>
+              </ul>
+              <p class="add-to-favorite">
+                <input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-3">
+                <label class="add-to-favorite__label" for="add-to-favorite-3"></label>
+              </p>
+            </div>
+            <div class="catalog-item__image">
+              <img src="img/plan-12.png" alt="План помещения">
+            </div>
+            <div class="catalog-item__data">
+              <div class="catalog-item__body">
+                <h4 class="catalog-item__title">Двухкомнатная №23</h4>
+                <div class="data-main">
+                  <table class="catalog-item__data-table data-table">
+                    <tr>
+                      <td class="data-table__finish">базовая<br />отделка</td>
+                      <td class="data-table__space">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">48 м<sup>2</sup></dt>
+                          <dd class="parameter__description">площадь</dd>
+                        </dl>
+                      </td>
+                      <td class="data-table__floor">
+                        <dl class="data-table__parameter parameter">
+                          <dt class="parameter__value">3/14</dt>
+                          <dd class="parameter__description">этаж</dd>
+                        </dl>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="catalog-item__price">5 255 006 руб.</p>
+                </div>
+              </div>
+              <footer class="catalog-item__footer">
+                <span class="catalog-item__status">Забронировано</span>
+              </footer>
+            </div>
+          </div>
         </div>
         <footer class="catalog__footer">
           <button class="button button--show-more">Показать еще 20</button>
         </footer>
       </section>
-      <section class="subscribe">
-        <dl class="page-footer__call-to-action action">
+      <section class="subscribtion">
+        <dl class="subscribtion__call-to-action action">
           <dt class="action__title">Успей купить!</dt>
-          <dd class="phone__description">Подпишись и успей словить все акции</dd>
+          <dd class="action__description">Подпишись и успей словить все акции</dd>
         </dl>
-        <form class="footer-subscription subscription" action="">
-          <input type="email" name="subscription-email" id="subscription-email">
-          <button class="button button--subscription">Показать еще 20</button>
-          <input type="checkbox" name="subscription-news" id="subscription-news">
-          <label for="subscription-news">Подписаться на новости</label>
+        <form class="subscribtion__form" action="">
+          <input class="subscribtion__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="E-mail">
+          <button class="button button--subscription">Подписаться</button>
+          <p class="checkbox__wrapper">
+            <input class="subscribtion__checkbox visually-hidden" type="checkbox" name="subscription-news" id="subscription-news">
+            <label class="subscribtion__title" for="subscription-news">Подписаться на новости</label>
+          </p>
         </form>
       </section>
     </div>
   </main>
   <script src="js/script.min.js"></script>
 </body>
+
 </html>
