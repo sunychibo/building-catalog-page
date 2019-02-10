@@ -2,64 +2,232 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+.nav-mobile {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 80px;
+	width: 80px;
+	@media (max-width: 992px) {
+		display: block;
+	}
+}	
+
+#nav-toggle {
+	position: absolute;
+	left: 25px;
+	top: 30px;
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+	cursor: pointer;
+	border-radius: 1px;
+	height: 2px;
+	width: 35px;
+	background: #ffffff;
+	position: absolute;
+	display: block;
+	content: '';
+	transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+	top: -10px;
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+#nav-toggle.active span {
+	background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+	top: 0;
+}
+
+#nav-toggle.active span:before {
+	transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+	transform: rotate(-45deg);
+}
+
 .container--header {
-    max-width: 1684px;
-    display: flex;
-    justify-content: space-between;
+	max-width: 1684px;
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 992px) {
+		justify-content: flex-start;
+	}
 }
 
 .page-header {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    background-color: $brand-color;
-    color: $milk-white;
+	position: relative;
+	z-index: 10;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: $brand-color;
+	color: $milk-white;
 }
 
+.page-header__logo-image {
+	@media (max-width: 1366px) {
+		width: 25px;
+	}
+
+	@media (max-width: 1200px) {
+		width: 16px;
+	}
+}
+
+
 .main-nav {
-    margin-left: -108px;
+	margin-left: -108px;
+
+	@media (max-width: 1600px) {
+		margin-left: -70px;
+	}
+
+	@media (max-width: 1200px) {
+		margin-left: 0;
+	}
+
+	@media (max-width: 992px) {
+		bottom: 0;
+    left: 0;
+		position: absolute;
+		z-index: 5;
+    width: 100%;
+		background-color: #0A3737;
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.6s;
+		transform: translate(0, -100%); 
+	}
+}
+
+.main-nav.is-open {
+	@media (max-width: 992px) {
+		visibility: visible;
+		opacity: 1;
+		transform: translate(0, 100%);
+	}
 }
 
 .site-list {
-    @include list-reset;
-    display: flex;
-    height: 100%;
-    align-items: center;
+	@include list-reset;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	@media (max-width: 992px) {
+		display: block;
+	}
+}
+
+.site-list__item {
+	@media (max-width: 992px) {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+	}	
 }
 
 .site-list__item+.site-list__item {
-    margin-left: 50px;
+	margin-left: 50px;
+
+	@media (max-width: 1600px) {
+		margin-left: 30px;
+	}
+
+	@media (max-width: 1200px) {
+		margin-left: 24px;
+	}
+
+	@media (max-width: 992px) {
+		margin-left: 0;
+		border-top: 2px solid $brand-color;
+	}
 }
 
 .site-list__link {
-    @include no-outline;
-    font-size: 24px;
-    letter-spacing: 0.8px;
-    line-height: 1.2;
-    transition: color 0.2s ease-in-out;
+	@include no-outline;
+	font-size: 24px;
+	letter-spacing: 0.8px;
+	line-height: 1.2;
+	transition: color 0.2s ease-in-out;
+
+	@media (max-width: 1366px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 992px) {
+		padding: 20px 0;
+    display: block;
+	}
 }
 
 .site-list__link:link,
 .site-list__link:visited {
-    color: $milk-white;
-    text-decoration: none;
+	color: $milk-white;
+	text-decoration: none;
 }
 
 .site-list__link:focus,
 .site-list__link:hover {
-    color: $hillary;
+	color: $hillary;
 }
 
 .page-header__contacts {
-    @include d-list-reset;
-    padding-top: 12px;
+	@include d-list-reset;
+	padding-top: 12px;
+
+	@media (max-width: 1366px) {
+		padding-top: 0;
+	}
+
+	@media (max-width: 1200px) {}
+}
+
+.phone {
+	margin-left: 10px;
 }
 
 .phone__number {
-    font-size: 32px;
-    line-height: 1.2;
+	font-size: 32px;
+	line-height: 1.2;
+
+	@media (max-width: 1366px) {
+		font-size: 28px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 20px;
+	}
 }
 
 .phone__call-to-action {
-    font-size: 20px;
-    line-height: 1.2;
+	font-size: 20px;
+	line-height: 1.2;
+
+	@media (max-width: 1366px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 14px;
+	}
 }
