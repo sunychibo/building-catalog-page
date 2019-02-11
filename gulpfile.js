@@ -97,6 +97,13 @@ gulp.task("copy", function(){
         .pipe(gulp.dest("build"));
 });
 
+/*del=====================================================================*/
+gulp.task("copyJSON", function(){
+    return gulp.src("source/**/*.json")
+        .pipe(gulp.dest("build"));
+});
+/*========================================================================*/
+
 gulp.task("clean", function(){
     return del("build");
 });
@@ -107,6 +114,7 @@ gulp.task("build", function(done){
         "images",
         "webp",
         "copy",
+        "copyJSON", // del
         "style",
         "script",
         "sprite",

@@ -9,9 +9,11 @@
 .container--main {
 	max-width: 1310px;
 	padding: 58px 0 74px 0;
+
 	@media (max-width: 1366px) {
 		padding-bottom: 0;
 	}
+
 	@media (max-width: 768px) {
 		padding-top: 18px;
 	}
@@ -25,16 +27,19 @@
 	color: $brand-color;
 	font-weight: bold;
 	line-height: 1.2;
+
 	@media (max-width: 1366px) {
 		font-size: 32px;
 		padding-bottom: 28px;
 	}
+
 	@media (max-width: 1200px) {
-		max-width: 724px;	
+		max-width: 724px;
 	}
+
 	@media (max-width: 768px) {
 		font-size: 26px;
-    padding-bottom: 16px;
+		padding-bottom: 16px;
 	}
 }
 
@@ -43,8 +48,9 @@
 	padding: 24px 0;
 	padding-bottom: 70px;
 	margin-bottom: 70px;
+
 	@media (max-width: 440px) {
-		margin-bottom: 0;	
+		margin-bottom: 0;
 	}
 }
 
@@ -52,8 +58,9 @@
 	max-width: 1098px;
 	padding: 0 15px 42px 15px;
 	margin: 0 auto;
+
 	@media (max-width: 1200px) {
-		max-width: 724px;	
+		max-width: 724px;
 	}
 }
 
@@ -72,13 +79,6 @@
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
-
-	&--active {
-		span {
-			color: $brand-color;
-			border-bottom: 1.5px dotted rgba(0, 47, 47, 0.2);
-		}
-	}
 }
 
 .sorting-item+.sorting-item {
@@ -87,6 +87,18 @@
 
 .sorting-item__title {
 	display: inline-block;
+	position: relative;
+
+	&::after {
+		content: "\a0";
+		visibility: hidden;
+		width: 100%;
+		position: absolute;
+		display: block;
+		padding-top: 2px;
+		line-height: 2px;
+		border-bottom: 1.5px dotted rgba(0, 47, 47, 0.2);
+	}
 }
 
 .sorting-item__button {
@@ -104,6 +116,16 @@
 	background-position: center center;
 }
 
+.sorting-item__button:hover+span,
+.sorting-item__button:active+span,
+.sorting-item__button:focus+span {
+	color: $brand-color;
+	&::after {
+		visibility: visible;
+		border-bottom: 1.5px dotted rgba(0, 47, 47, 0.4);
+	}
+}
+
 .sorting-item__button[data-sorting="down"] {
 	background-image: url("../img/chevron-down.png");
 }
@@ -116,8 +138,9 @@
 	max-width: 1098px;
 	padding: 0 15px;
 	margin: 0 auto;
+
 	@media (max-width: 1200px) {
-		max-width: 724px;	
+		max-width: 724px;
 	}
 }
 
@@ -126,6 +149,7 @@
 	flex-wrap: wrap;
 	margin-left: -54px;
 	margin-bottom: -54px;
+
 	@media (max-width: 768px) {
 		justify-content: center;
 	}
@@ -139,9 +163,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+
 	@media (max-width: 440px) {
 		width: 100%;
 	}
+
 	&--reserved {
 		border: 1px solid $status-reserved;
 
@@ -231,9 +257,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
 	@media (max-width: 992px) {
 		min-height: 136px;
-    margin-bottom: 34px;
+		margin-bottom: 34px;
 	}
 }
 
@@ -242,6 +269,7 @@
 	font-size: 24px;
 	font-weight: 700;
 	color: $brand-color;
+
 	@media (max-width: 768px) {
 		font-size: 18px;
 	}
@@ -307,6 +335,7 @@
 	color: $text-color;
 	line-height: 1.2;
 	font-weight: 600;
+
 	@media (max-width: 768px) {
 		font-size: 22px;
 	}
@@ -315,6 +344,7 @@
 .catalog__footer {
 	padding-top: 54px;
 	text-align: center;
+
 	@media (max-width: 440px) {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -333,12 +363,14 @@
 	border-radius: 3px;
 	letter-spacing: 1px;
 	cursor: pointer;
+
 	@media (max-width: 992px) {
 		padding-left: 20%;
 		padding-right: 20%;
 	}
+
 	@media (max-width: 440px) {
-    width: 100%;
+		width: 100%;
 	}
 }
 
@@ -349,6 +381,7 @@
 	padding-right: 106px;
 	padding-top: 44px;
 	padding-bottom: 46px;
+
 	@media (max-width: 992px) {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -358,6 +391,7 @@
 .subscribtion__wrapper {
 	display: flex;
 	justify-content: space-between;
+
 	@media (max-width: 992px) {
 		flex-direction: column;
 		max-width: 326px;
@@ -367,9 +401,10 @@
 
 .subscribtion__form {
 	padding-top: 16px;
+
 	@media (max-width: 1200px) {
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 	}
 }
 
@@ -411,12 +446,14 @@
 	letter-spacing: 1px;
 	cursor: pointer;
 	margin-left: 48px;
+
 	@media (max-width: 1200px) {
 		margin-left: 0;
-    width: 324px;
+		width: 324px;
 	}
+
 	@media (max-width: 440px) {
-    width: 100%;
+		width: 100%;
 	}
 }
 
@@ -426,6 +463,7 @@
 	border-radius: 3px;
 	width: 324px;
 	border: none;
+
 	@media (max-width: 1200px) {
 		display: block;
 		margin-bottom: 15px;
@@ -447,7 +485,7 @@
 
 }
 
-.subscribtion__checkbox + label::before {
+.subscribtion__checkbox+label::before {
 	content: "";
 	position: absolute;
 	left: -24px;
@@ -458,11 +496,11 @@
 	background-color: $milk-white;
 }
 
-.subscribtion__checkbox:checked + label::after {
+.subscribtion__checkbox:checked+label::after {
 	content: "";
 	position: absolute;
 	top: 6px;
-  left: -20px;
+	left: -20px;
 	width: 13px;
 	height: 13px;
 	background-image: url("../img/check.png");

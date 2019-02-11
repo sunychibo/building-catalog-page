@@ -1,122 +1,206 @@
 (function mobileMenu() {
-    var mainNavigation = document.querySelector('.main-nav');
-    var hamburgerToggle = document.querySelector('#nav-toggle');
+	var mainNavigation = document.querySelector('.main-nav');
+	var hamburgerToggle = document.querySelector('#nav-toggle');
 
-    hamburgerToggle.addEventListener('click', function (event) {
-        event.preventDefault();
-        this.classList.toggle('active');
-        mainNavigation.classList.toggle('is-open');
-    });
+	hamburgerToggle.addEventListener('click', function (event) {
+		event.preventDefault();
+		this.classList.toggle('active');
+		mainNavigation.classList.toggle('is-open');
+	});
 })();
 
 (function sorting() {
-    var priceSortingButton = document.querySelector('#sorting-by-price');
-    var roomsSortingButton = document.querySelector('#sorting-by-rooms');
-    var catalogList = document.querySelector('.catalog-items');
+	var priceSortingButton = document.querySelector('#sorting-by-price');
+	var roomsSortingButton = document.querySelector('#sorting-by-rooms');
+	var catalogList = document.querySelector('.catalog-items');
 
-    function sortingDirectionHelper() {
-        var currentButton = event.target;
-        var currentSortingDirection = currentButton.dataset.sorting;
+	function sortingDirectionHelper() {
+		var currentButton = event.target;
+		var currentSortingDirection = currentButton.dataset.sorting;
 
-        if (currentSortingDirection === 'down') {
-            currentButton.dataset.sorting = 'up';
-        } else {
-            currentButton.dataset.sorting = 'down';
-        }
-        return currentButton.dataset.sorting;
-    }
+		if (currentSortingDirection === 'down') {
+			currentButton.dataset.sorting = 'up';
+		} else {
+			currentButton.dataset.sorting = 'down';
+		}
+		return currentButton.dataset.sorting;
+	}
 
-    function doSortingByPrice() {
-        var sortingDirection = sortingDirectionHelper();
-        if (sortingDirection === 'up') {
-            sortingPriceUp();
-        } else {
-            sortingPriceDown();
-        }
-    }
+	function doSortingByPrice() {
+		var sortingDirection = sortingDirectionHelper();
+		if (sortingDirection === 'up') {
+			sortingPriceUp();
+		} else {
+			sortingPriceDown();
+		}
+	}
 
-    function doSortingByRooms() {
-        var sortingDirection = sortingDirectionHelper();
-        if (sortingDirection === 'up') {
-            sortingRoomsUp();
-        } else {
-            sortingRoomsDown();
-        }
+	function doSortingByRooms() {
+		var sortingDirection = sortingDirectionHelper();
+		if (sortingDirection === 'up') {
+			sortingRoomsUp();
+		} else {
+			sortingRoomsDown();
+		}
+	}
 
-    }
+	function sortingHelper(sorter) {
+		var catalogItems = catalogList.childNodes;
+		var catalogItemsArray = [];
+		for (var i in catalogItems) {
+			if (catalogItems[i].nodeType == 1) { // get rid of the whitespace text nodes
+				catalogItemsArray.push(catalogItems[i]);
+			}
+		}
 
-    function sortingHelper(sorter) {
-        var catalogItems = catalogList.childNodes;
-        var catalogItemsArray = [];
-        for (var i in catalogItems) {
-            if (catalogItems[i].nodeType == 1) { // get rid of the whitespace text nodes
-                catalogItemsArray.push(catalogItems[i]);
-            }
-        }
-    
-        sorter(catalogItemsArray);
-    
-        for (i = 0; i < catalogItemsArray.length; ++i) {
-            catalogList.appendChild(catalogItemsArray[i]);
-        }
-    }
+		sorter(catalogItemsArray);
 
-    function sortingPriceUp() {
-        // Сортируем по возрастанию цены
-        var priceUpSorter = function(catalogItemsArray) {
-            return catalogItemsArray.sort(function (a, b) {
-                var valueA = a.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
-                var valueB = b.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
-                return valueA - valueB;
-            });
-        };
-        sortingHelper(priceUpSorter);
-    }
+		for (i = 0; i < catalogItemsArray.length; ++i) {
+			catalogList.appendChild(catalogItemsArray[i]);
+		}
+	}
 
-    function sortingPriceDown() {
-        // Сортируем по убыванию цены'
-        var priceDownSorter = function(catalogItemsArray) {
-            return catalogItemsArray.sort(function (a, b) {
-                var valueA = a.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
-                var valueB = b.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
-                return valueB - valueA;
-            });
-        };
-        sortingHelper(priceDownSorter);
-    }
+	function sortingPriceUp() {
+		// Сортируем по возрастанию цены
+		var priceUpSorter = function (catalogItemsArray) {
+			return catalogItemsArray.sort(function (a, b) {
+				var valueA = a.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
+				var valueB = b.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
+				return valueA - valueB;
+			});
+		};
+		sortingHelper(priceUpSorter);
+	}
 
-    function sortingRoomsUp() {
-        // Сортируем по возрастанию кол-ва комнат
-        var roomsUpSorter = function(catalogItemsArray) {
-            return catalogItemsArray.sort(function (a, b) {
-                var valueA = a.querySelector('.catalog-item__title').dataset.rooms;
-                var valueB = b.querySelector('.catalog-item__title').dataset.rooms;
-                return valueA - valueB;
-            });
-        };
-        sortingHelper(roomsUpSorter);
-    }
+	function sortingPriceDown() {
+		// Сортируем по убыванию цены'
+		var priceDownSorter = function (catalogItemsArray) {
+			return catalogItemsArray.sort(function (a, b) {
+				var valueA = a.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
+				var valueB = b.querySelector('.catalog-item__price').innerHTML.replace(/\D/g, '');
+				return valueB - valueA;
+			});
+		};
+		sortingHelper(priceDownSorter);
+	}
 
-    function sortingRoomsDown() {
-        // Сортируем по убыванию кол-ва комнат
-        var roomsDownSorter = function(catalogItemsArray) {
-            return catalogItemsArray.sort(function (a, b) {
-                var valueA = a.querySelector('.catalog-item__title').dataset.rooms;
-                var valueB = b.querySelector('.catalog-item__title').dataset.rooms;
-                return valueB - valueA;
-            });
-        };    
-        sortingHelper(roomsDownSorter);
-    }
+	function sortingRoomsUp() {
+		// Сортируем по возрастанию кол-ва комнат
+		var roomsUpSorter = function (catalogItemsArray) {
+			return catalogItemsArray.sort(function (a, b) {
+				var valueA = a.querySelector('.catalog-item__title').dataset.rooms;
+				var valueB = b.querySelector('.catalog-item__title').dataset.rooms;
+				return valueA - valueB;
+			});
+		};
+		sortingHelper(roomsUpSorter);
+	}
 
-    priceSortingButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        doSortingByPrice();
-    });
+	function sortingRoomsDown() {
+		// Сортируем по убыванию кол-ва комнат
+		var roomsDownSorter = function (catalogItemsArray) {
+			return catalogItemsArray.sort(function (a, b) {
+				var valueA = a.querySelector('.catalog-item__title').dataset.rooms;
+				var valueB = b.querySelector('.catalog-item__title').dataset.rooms;
+				return valueB - valueA;
+			});
+		};
+		sortingHelper(roomsDownSorter);
+	}
 
-    roomsSortingButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        doSortingByRooms();
-    });
+	document.addEventListener('DOMContentLoaded', function (event) {
+		var defaultPriceSortingDirection = priceSortingButton.dataset.sorting;
+		if (defaultPriceSortingDirection === 'up') {
+			sortingPriceUp();
+		} else {
+			sortingPriceDown();
+		}
+
+		var defaultRoomsSortingDirection = roomsSortingButton.dataset.sorting;
+		if (defaultRoomsSortingDirection === 'up') {
+			sortingRoomsUp();
+		} else {
+			sortingRoomsDown();
+		}
+	});
+
+	priceSortingButton.addEventListener('click', function (event) {
+		event.preventDefault();
+		doSortingByPrice();
+	});
+
+	roomsSortingButton.addEventListener('click', function (event) {
+		event.preventDefault();
+		doSortingByRooms();
+	});
 })();
 
+(function addMoreCatalogItems() {
+	var showMoreButton = document.querySelector('.button--show-more');
+	showMoreButton.addEventListener('click', function (event) {
+		event.preventDefault();
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'apartment.json', true);
+
+		xhr.onload = function (){
+			if (this.status == 200){
+				var catalogContainer = document.querySelector('.catalog-items');
+				var apartments = JSON.parse(this.responseText);
+				var outputTemplate = '';
+
+				for (var i in apartments) {
+					outputTemplate += '<div class="catalog-item ' + apartments[i].statusClass +'">' +
+											'<div class="catalog-item__header">' +
+											'<ul class="flag-list">' + 
+												'<li class="flag-list__item">' + apartments[i].flags.percentage + '</li>' +
+												'<li class="flag-list__item">' + apartments[i].flags.title + '</li>' +
+											'</ul>' +
+											'<p class="add-to-favorite">' +
+												'<input class="visually-hidden add-to-favorite__input" type="checkbox" name="add-to-favorite" id="add-to-favorite-11">' +
+												'<label class="add-to-favorite__label" for="add-to-favorite-11"></label>' +
+											'</p>' +
+											'</div>' +
+											'<div class="catalog-item__image">' +
+											'<picture>' +
+												'<source type="image/webp" srcset="' + apartments[i].imageWEBP + '">' +
+												'<source type="image/png" srcset="' + apartments[i].imagePNG + '">' +
+												'<img src="' + apartments[i].imagePNG + '" alt="План помещения">' +
+											'</picture>' +
+											'</div>' +
+											'<div class="catalog-item__data">' +
+											'<div class="catalog-item__body">' +
+												'<h4 class="catalog-item__title" data-rooms="'+ apartments[i].rooms +'">' + apartments[i].title + '</h4>' +
+												'<div class="data-main">' +
+												'<table class="catalog-item__data-table data-table">' +
+													'<tr>' +
+													'<td class="data-table__finish">' + apartments[i].finish + '</td>' +
+													'<td class="data-table__space">' +
+														'<dl class="data-table__parameter parameter">' +
+														'<dt class="parameter__value">' + apartments[i].space + '</dt>' +
+														'<dd class="parameter__description">площадь</dd>' +
+														'</dl>' +
+													'</td>' +
+													'<td class="data-table__floor">' +
+														'<dl class="data-table__parameter parameter">' +
+														'<dt class="parameter__value">' + apartments[i].floor + '</dt>' +
+														'<dd class="parameter__description">этаж</dd>' +
+														'</dl>' +
+													'</td>' +
+													'</tr>' +
+												'</table>' +
+												'<p class="catalog-item__price">' + apartments[i].price + '</p>' +
+												'</div>' +
+											'</div>' +
+											'<footer class="catalog-item__footer">' +
+												'<span class="catalog-item__status">' + apartments[i].statusText + '</span>' +
+											'</footer>' +
+											'</div>' +
+										'</div>';
+				}
+				catalogContainer.insertAdjacentHTML('beforeend', outputTemplate);
+			}
+		}	
+
+		xhr.send();
+	});
+})();

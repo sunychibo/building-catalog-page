@@ -1,0 +1,338 @@
+[
+	{
+		"imagePNG":"img/plan-5.png",
+		"imageWEBP":"img/plan-5.webp",
+		"title":"Двухкомнатная №56",
+		"finish":"без<br/>отделки",
+		"rooms":2,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 730 000 руб.",
+		"flags":{
+			"percentage":"-13%",
+			"title":"Шок цена!"
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-8.png",
+		"imageWEBP":"img/plan-8.webp",
+		"title":"Студия №316",
+		"finish":"бaзовая<br/>отделка",
+		"rooms":1,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 800 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-3.png",
+		"imageWEBP":"img/plan-3.webp",
+		"title":"Однокомнатная №38",
+		"finish":"черновая<br/>отделка",
+		"rooms":1.5,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 010 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--vacant",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-1.png",
+		"imageWEBP":"img/plan-1.webp",
+		"title":"Двухкомнатная №506",
+		"finish":"без<br/>отделки",
+		"rooms":2,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"3 550 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-11.png",
+		"imageWEBP":"img/plan-11.webp",
+		"title":"Трехкомнатная №51",
+		"finish":"без<br/>отделки",
+		"rooms":3,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"5 830 000 руб.",
+		"flags":{
+			"percentage":"-5%",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-4.png",
+		"imageWEBP":"img/plan-4.webp",
+		"title":"Однокомнатная №56",
+		"finish":"без<br/>отделки",
+		"rooms":1.5,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"8 730 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--vacant",
+		"statusText":"Свободно"
+	},
+	{
+		"imagePNG":"img/plan-2.png",
+		"imageWEBP":"img/plan-2.webp",
+		"title":"Четырехкомнатная №511",
+		"finish":"без<br/>отделки",
+		"rooms":4,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"3 730 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--vacant",
+		"statusText":"Свободно"
+	},
+	{
+		"imagePNG":"img/plan-7.png",
+		"imageWEBP":"img/plan-7.webp",
+		"title":"Пятикомнатная №12",
+		"finish":"без<br/>отделки",
+		"rooms":5,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 735 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-6.png",
+		"imageWEBP":"img/plan-6.webp",
+		"title":"Студия №16",
+		"finish":"без<br/>отделки",
+		"rooms":1,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"2 680 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-9.png",
+		"imageWEBP":"img/plan-9.webp",
+		"title":"Студия №59",
+		"finish":"без<br/>отделки",
+		"rooms":1,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"4 400 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-6.png",
+		"imageWEBP":"img/plan-6.webp",
+		"title":"Однокомнатная №36",
+		"finish":"без<br/>отделки",
+		"rooms":1.5,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"6 730 000 руб.",
+		"flags":{
+			"percentage":"-50%",
+			"title":"Шок цена!"
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-10.png",
+		"imageWEBP":"img/plan-10.webp",
+		"title":"Трехкомнатная №76",
+		"finish":"без<br/>отделки",
+		"rooms":3,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"7 730 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-11.png",
+		"imageWEBP":"img/plan-11.webp",
+		"title":"Студия №73",
+		"finish":"без<br/>отделки",
+		"rooms":1,
+		"space":"28 м<sup>2</sup>",
+		"floor":"19/19",
+		"price":"1 710 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-9.png",
+		"imageWEBP":"img/plan-9.webp",
+		"title":"Трехкомнатная №51",
+		"finish":"без<br/>отделки",
+		"rooms":3,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 730 600 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-4.png",
+		"imageWEBP":"img/plan-4.webp",
+		"title":"Студия №88",
+		"finish":"без<br/>отделки",
+		"rooms":1,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 751 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--vacant",
+		"statusText":"Свободно"
+	},
+	{
+		"imagePNG":"img/plan-1.png",
+		"imageWEBP":"img/plan-1.webp",
+		"title":"Двухкомнатная №13",
+		"finish":"без<br/>отделки",
+		"rooms":2,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 731 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-3.png",
+		"imageWEBP":"img/plan-3.webp",
+		"title":"Двухкомнатная №23",
+		"finish":"без<br/>отделки",
+		"rooms":2,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 730 001 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--vacant",
+		"statusText":"Свободно"
+	},
+	{
+		"imagePNG":"img/plan-12.png",
+		"imageWEBP":"img/plan-12.webp",
+		"title":"Студия №29",
+		"finish":"без<br/>отделки",
+		"rooms":1,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 730 999 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-1.png",
+		"imageWEBP":"img/plan-1.webp",
+		"title":"Двухкомнатная №56",
+		"finish":"без<br/>отделки",
+		"rooms":2,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 730 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--sold",
+		"statusText":"Продано"
+	},
+	{
+		"imagePNG":"img/plan-6.png",
+		"imageWEBP":"img/plan-6.webp",
+		"title":"Двухкомнатная №56",
+		"finish":"без<br/>отделки",
+		"rooms":2,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"1 730 003 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	},
+	{
+		"imagePNG":"img/plan-5.png",
+		"imageWEBP":"img/plan-5.webp",
+		"title":"Трехкомнатная №9",
+		"finish":"без<br/>отделки",
+		"rooms":3,
+		"space":"28 м<sup>2</sup>",
+		"floor":"12/19",
+		"price":"3 730 000 руб.",
+		"flags":{
+			"percentage":"",
+			"title":""
+		},
+		"statusClass":"catalog-item--reserved",
+		"statusText":"Забронировано"
+	}
+]
