@@ -71,6 +71,7 @@
 .sorting-item {
 	display: inline-block;
 	position: relative;
+	cursor: pointer;
 
 	&--active {
 		span {
@@ -92,15 +93,23 @@
 	position: absolute;
 	@include button-reset;
 	@include no-outline;
+	cursor: pointer;
 	width: 18px;
 	height: 18px;
 	background-color: $venice-light;
 	border-radius: 50%;
 	top: 2px;
 	right: -26px;
-	background-image: url("../img/chevron-down.png");
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+.sorting-item__button[data-sorting="down"] {
+	background-image: url("../img/chevron-down.png");
+}
+
+.sorting-item__button[data-sorting="up"] {
+	background-image: url("../img/chevron-up.png");
 }
 
 .catalog-items__wrapper {
