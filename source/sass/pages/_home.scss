@@ -340,11 +340,6 @@
 	padding-right: 106px;
 	padding-top: 44px;
 	padding-bottom: 46px;
-	display: flex;
-	justify-content: space-between;
-	@media (max-width: 1366px) {
-		flex-direction: column;
-	}
 	@media (max-width: 992px) {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -352,7 +347,10 @@
 }
 
 .subscribtion__wrapper {
+	display: flex;
+	justify-content: space-between;
 	@media (max-width: 992px) {
+		flex-direction: column;
 		max-width: 326px;
 		margin: 0 auto;
 	}
@@ -360,6 +358,10 @@
 
 .subscribtion__form {
 	padding-top: 16px;
+	@media (max-width: 1200px) {
+		display: flex;
+    flex-direction: column;
+	}
 }
 
 .action {
@@ -400,7 +402,7 @@
 	letter-spacing: 1px;
 	cursor: pointer;
 	margin-left: 48px;
-	@media (max-width: 992px) {
+	@media (max-width: 1200px) {
 		margin-left: 0;
     width: 324px;
 	}
@@ -415,7 +417,7 @@
 	border-radius: 3px;
 	width: 324px;
 	border: none;
-	@media (max-width: 992px) {
+	@media (max-width: 1200px) {
 		display: block;
 		margin-bottom: 15px;
 	}
