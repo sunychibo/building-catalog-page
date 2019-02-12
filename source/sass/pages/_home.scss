@@ -406,6 +406,9 @@
 		display: flex;
 		flex-direction: column;
 	}
+	@media (max-width: 992px) {
+		padding-top: 40px;
+	}
 }
 
 .action {
@@ -506,4 +509,37 @@
 	background-image: url("../img/check.png");
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+.button--scroll-top {
+	@include button-reset;
+	@include no-outline;
+	cursor: pointer;
+	display: block;
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	top: 80%;
+	right: 50px;
+	background-image: url("../img/back-to-top-button.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media (max-width: 1366px) {
+		width: 50px;
+		height: 50px;	
+		top: 80%;
+		right: 20px;
+	}
+}
+
+.subscribtion__input-wrapper {
+	display: inline-block;
+	position: relative;
+}
+
+.error-message {
+	position: absolute;
+	top: -35px;
+	color: red;
+	font-weight: 400;
 }
