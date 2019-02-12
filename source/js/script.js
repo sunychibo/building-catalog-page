@@ -240,6 +240,16 @@
 		};
 		animateScroll();
 	};
+
+	window.addEventListener('scroll', function () {
+		var topScrolled = window.scrollY;
+		if (topScrolled > window.innerHeight) {
+			scrollTopButton.classList.remove('hidden');
+		}
+		if (topScrolled < window.innerHeight) {
+			scrollTopButton.classList.add('hidden');
+		}
+	});
 })();
 
 (function validateEmail() {
@@ -258,7 +268,7 @@
 		var currentMessage = currentField.parentNode.querySelector('.error-message');
 		if (currentMessage) {
 			removeMessage(currentMessage);
-		}	
+		}
 	});
 
 	var addMessage = function (message) {

@@ -524,6 +524,12 @@
 	background-image: url("../img/back-to-top-button.png");
 	background-size: cover;
 	background-repeat: no-repeat;
+	opacity: 1;
+	transition: all 0.4s ease-in-out; 
+	&.hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
 	@media (max-width: 1366px) {
 		width: 50px;
 		height: 50px;	
